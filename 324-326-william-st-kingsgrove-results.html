@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Results - 101-105 Bridge Rd, Belmore</title>
+<title>Results - 324-326 William St, Kingsgrove</title>
 <style>
 body{font-family:Arial;background:#5f7a94;min-height:100vh;padding:20px;margin:0}
 .container{max-width:1200px;margin:0 auto;background:white;border-radius:15px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,0.2)}
@@ -50,10 +50,10 @@ a.back-link{display:inline-block;margin-bottom:20px;color:#667eea;text-decoratio
 <div class="container">
 <div class="header">
 <h1>Submission Results</h1>
-<h2>101-105 Bridge Rd, Belmore</h2>
+<h2>324-326 William St, Kingsgrove</h2>
 </div>
 <div class="content">
-<a href="101-105-bridge-rd-belmore-form.html" class="back-link">← Back to Form</a>
+<a href="324-326-william-st-kingsgrove-form.html" class="back-link">← Back to Form</a>
 <div id="rCalendarView"></div>
 <div id="resultsArea"><p style="color:#999;text-align:center;padding:40px">Select a day to view submissions</p></div>
 </div>
@@ -62,20 +62,27 @@ a.back-link{display:inline-block;margin-bottom:20px;color:#667eea;text-decoratio
 <script>
 var SUPABASE_URL="https://hkrktfmvxgctjeivmobz.supabase.co";
 var SUPABASE_KEY="sb_publishable_a5_CAmMfSQrlVzUy3YhUWw_IQHb4RBy";
-var SITE_ID="101-105-bridge-rd-belmore";
+var SITE_ID="324-326-william-st-kingsgrove";
 var supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 var SITE_NOTES="";
 if(SITE_NOTES){var nb=document.getElementById("notesBox");if(nb){nb.innerHTML="<div class=\"notes-box\">"+SITE_NOTES.replace(/\n/g,"<br>")+"</div>";}}
 var questions=[
-{type:"task",id:"q1",label:"Lawn mowing and edging - Fortnightly",frq:""},
-{type:"task",id:"q2",label:"Trimming hedges, shrubs, and plants (hedges along the kerbs in private property are not included) - Fortnightly",frq:""},
-{type:"task",id:"q3",label:"Trimming trees where reachable - Fortnightly",frq:""},
-{type:"task",id:"q4",label:"Removing dead vegetation and foliage - Fortnightly",frq:""},
-{type:"task",id:"q5",label:"Foliage in the gardens (i.e. pine tree needles, bark) will be monitored and removed regularly - As required",frq:""},
-{type:"task",id:"q6",label:"Weeding and poisoning - Fortnightly",frq:""},
-{type:"task",id:"q7",label:"Air blowing footpaths and driveways and collecting foliage - Fortnightly",frq:""},
-{type:"task",id:"q8",label:"Clearing storm water drains in the gardens - Fortnightly",frq:""},
-{type:"task",id:"q9",label:"Disposal of green waste at the tip if bins are not available (tip fees are excluded) - Fortnightly",frq:""}
+{type:"task",id:"q1",label:"Vacuuming and mopping floors - Weekly",frq:""},
+{type:"task",id:"q2",label:"Polishing foyer glass doors and glass panels - Weekly",frq:""},
+{type:"task",id:"q3",label:"Wiping down common door handles - Weekly",frq:""},
+{type:"task",id:"q4",label:"Wiping down balustrades, handrails, skirting boards, power points, light switches - Weekly",frq:""},
+{type:"task",id:"q5",label:"Wiping down light fittings - As required",frq:""},
+{type:"task",id:"q6",label:"Cleaning internal windows and windowsills - Weekly",frq:""},
+{type:"task",id:"q7",label:"Removing cobwebs throughout the SP, internally and externally - Weekly",frq:""},
+{type:"task",id:"q8",label:"Collecting rubbish throughout the SP, internally and externally - Weekly",frq:""},
+{type:"task",id:"q9",label:"Wiping down intercoms - Weekly",frq:""},
+{type:"task",id:"q10",label:"Wiping down letterboxes and removing junk mail - Weekly",frq:""},
+{type:"task",id:"q11",label:"Wiping down common doors, fire doors included - As required",frq:""},
+{type:"task",id:"q12",label:"Clearing stormwater drains - Weekly",frq:""},
+{type:"task",id:"q13",label:"Air blowing footpath and driveway, and collecting foliage - Weekly",frq:""},
+{type:"task",id:"q14",label:"Relocating bins for collections and returning the next day, Wednesday to Thursday - Weekly",frq:""},
+{type:"task",id:"q15",label:"Washing bins and bin room - Weekly",frq:""},
+{type:"task",id:"q16",label:"Maintaining two onsite toilet and topping up with consumables (the price of consumables is excluded) - Weekly",frq:""}
 ];
 var today=new Date();
 var rCurrentMonth=new Date(today.getFullYear(),today.getMonth(),1);

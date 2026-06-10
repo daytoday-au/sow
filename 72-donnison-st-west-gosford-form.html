@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Form - 101-105 Bridge Rd, Belmore</title>
+<title>Form - 72 Donnison St West Gosford New</title>
 <style>
 body{font-family:Arial;background:#5f7a94;min-height:100vh;padding:20px;margin:0}
 .container{max-width:900px;margin:0 auto;background:white;border-radius:15px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,0.2)}
@@ -60,7 +60,7 @@ body{font-family:Arial;background:#5f7a94;min-height:100vh;padding:20px;margin:0
 <div class="container">
 <div class="header">
 <h1>Daytoday Real Time SOW Status Form</h1>
-<h2>Site: 101-105 Bridge Rd, Belmore</h2>
+<h2>Site: 72 Donnison St West Gosford New</h2>
 <p id="formDate" style="margin:10px 0 0 0;font-size:1em;opacity:0.9"></p>
 </div>
 <div class="content">
@@ -73,28 +73,48 @@ body{font-family:Arial;background:#5f7a94;min-height:100vh;padding:20px;margin:0
 <div id="form"></div>
 <button class="submit-btn" onclick="submitForm()">Submit Form</button>
 </div>
-<div class="link-box"><p style="margin:0 0 10px 0">Want to view submission history?</p><a href="101-105-bridge-rd-belmore-results.html">Open Results Viewer →</a></div>
+<div class="link-box"><p style="margin:0 0 10px 0">Want to view submission history?</p><a href="72-donnison-st-west-gosford-new-results.html">Open Results Viewer →</a></div>
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 var SUPABASE_URL="https://hkrktfmvxgctjeivmobz.supabase.co";
 var SUPABASE_KEY="sb_publishable_a5_CAmMfSQrlVzUy3YhUWw_IQHb4RBy";
-var SITE_ID="101-105-bridge-rd-belmore";
-var SITE_NAME="101-105 Bridge Rd, Belmore";
+var SITE_ID="72-donnison-st-west-gosford-new";
+var SITE_NAME="72 Donnison St West Gosford New";
 var supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 var SITE_NOTES="";
 if(SITE_NOTES){var nb=document.getElementById("notesBox");if(nb){nb.innerHTML="<div class=\"notes-box\">"+SITE_NOTES.replace(/\n/g,"<br>")+"</div>";}}
 var questions=[
-{type:"task",id:"q1",label:"Lawn mowing and edging - Fortnightly",frq:""},
-{type:"task",id:"q2",label:"Trimming hedges, shrubs, and plants (hedges along the kerbs in private property are not included) - Fortnightly",frq:""},
-{type:"task",id:"q3",label:"Trimming trees where reachable - Fortnightly",frq:""},
-{type:"task",id:"q4",label:"Removing dead vegetation and foliage - Fortnightly",frq:""},
-{type:"task",id:"q5",label:"Foliage in the gardens (i.e. pine tree needles, bark) will be monitored and removed regularly - As required",frq:""},
-{type:"task",id:"q6",label:"Weeding and poisoning - Fortnightly",frq:""},
-{type:"task",id:"q7",label:"Air blowing footpaths and driveways and collecting foliage - Fortnightly",frq:""},
-{type:"task",id:"q8",label:"Clearing storm water drains in the gardens - Fortnightly",frq:""},
-{type:"task",id:"q9",label:"Disposal of green waste at the tip if bins are not available (tip fees are excluded) - Fortnightly",frq:""}
+{type:"heading",label:"Daily Tasks"},
+{type:"task",id:"q1781093652448",label:"External entrance area",frq:""},
+{type:"task",id:"q1781093673836",label:"Lobby - all surfaces, glass doors and panels",frq:""},
+{type:"task",id:"q1781093711504",label:"Lifts - buttons, walls and tracks",frq:""},
+{type:"task",id:"q1781093723508",label:"Intercoms",frq:""},
+{type:"task",id:"q1781093751314",label:"Toilets and toping up amenities",frq:""},
+{type:"task",id:"q1781093774276",label:"Rotate yellow bins on each floor",frq:""},
+{type:"task",id:"q1781093804422",label:"Spot cleaning all floors as necessary",frq:""},
+{type:"heading",label:"Twice Per Week"},
+{type:"task",id:"q1781093933677",label:"Vacuuming and mopping floors, All floors included",frq:""},
+{type:"task",id:"q1781093941586",label:"Wiping down balustrades, handrails, power points, light switches",frq:""},
+{type:"task",id:"q1781093947620",label:"Wiping down light fittings",frq:""},
+{type:"task",id:"q1781093954078",label:"Cleaning internal windows and windowsills",frq:""},
+{type:"task",id:"q1781093962563",label:"Removing cobwebs throughout the SP, internally and externally",frq:""},
+{type:"task",id:"q1781093970957",label:"Collecting rubbish throughout the SP, internally and externally",frq:""},
+{type:"task",id:"q1781093978225",label:"Wiping down letterboxes and removing junk mail",frq:""},
+{type:"task",id:"q1781093984696",label:"Deodorising hallways",frq:""},
+{type:"task",id:"q1781093990630",label:"Removing marks from walls (where possible)",frq:""},
+{type:"task",id:"q1781093997817",label:"Clearing stormwater drains",frq:""},
+{type:"task",id:"q1781094005979",label:"Air blowing footpath and driveway, and collecting foliage",frq:""},
+{type:"task",id:"q1781094012034",label:"Washing bins, bin room, and bin chute rooms",frq:""},
+{type:"task",id:"q1781094018690",label:"Topping up hand sanitiser liquid near lifts",frq:""},
+{type:"heading",label:"Bin Management"},
+{type:"task",id:"q1781094040438",label:"Red bins, Monday – Tuesday, Thursday – Friday - (Twice weekly)",frq:""},
+{type:"task",id:"q1781094047932",label:"Yellow bins, Tuesday – Wednesday - (Weekly)",frq:""},
+{type:"task",id:"q1781094054414",label:"Green bins are collected on a fortnightly basis - (Fortnightly)",frq:""},
+{type:"heading",label:"Periodic Tasks"},
+{type:"task",id:"q1781094080984",label:"Heavy-duty scrubbing of all tiled areas - (Quarterly)",frq:""},
+{type:"task",id:"q1781094183399",label:"Sweeping fire stairs x2 - (Helf Yearly)",frq:""}
 ];
 var answers={};
 var selectedDate=null;
