@@ -68,6 +68,7 @@ body{font-family:Arial;background:#5f7a94;min-height:100vh;padding:20px;margin:0
 <div id="formView" style="display:none">
 <button type="button" class="back-btn" onclick="showCalendar()">← Back to Calendar</button>
 <div id="selectedDateDisplay" class="selected-date-display"></div>
+<div id="notesBox"></div>
 <div id="msg"></div>
 <div id="form"></div>
 <button class="submit-btn" onclick="submitForm()">Submit Form</button>
@@ -82,7 +83,10 @@ var SUPABASE_KEY="sb_publishable_a5_CAmMfSQrlVzUy3YhUWw_IQHb4RBy";
 var SITE_ID="23-good-st-parramatta";
 var SITE_NAME="23 Good St, Parramatta";
 var supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+var SITE_NOTES="";
+if(SITE_NOTES){var nb=document.getElementById("notesBox");if(nb){nb.innerHTML="<div class=\"notes-box\">"+SITE_NOTES.replace(/\n/g,"<br>")+"</div>";}}
 var questions=[
+{type:"heading",label:"Block A , B and C alternate weeks"},
 {type:"task",id:"q1",label:"Mopping floors and vacuuming carpets - Fortnightly",frq:""},
 {type:"task",id:"q2",label:"Wiping handrails - Fortnightly",frq:""},
 {type:"task",id:"q3",label:"Clean entry glass doors and wooden doors - Fortnightly",frq:""},
@@ -106,7 +110,9 @@ var questions=[
 {type:"task",id:"q20",label:"Remove cobwebs - Weekly",frq:""},
 {type:"task",id:"q21",label:"Air blow driveway, footpath and walkways - Weekly",frq:""},
 {type:"task",id:"q22",label:"Air blow carparks alternate month - Monthly",frq:""},
-{type:"task",id:"q23",label:"Check for maintenance issues and report back - Weekly",frq:""}
+{type:"task",id:"q23",label:"Check for maintenance issues and report back - Weekly",frq:""},
+{type:"task",id:"q24",label:"Bin Management – Monday – Tuesday - Weekly Telephone 1300 242 277 Email info@daytoday.com.au",frq:""},
+{type:"task",id:"q25",label:"Washing of bin and bin room - Weekly Telephone 1300 242 277 Email info@daytoday.com.au",frq:""}
 ];
 var answers={};
 var selectedDate=null;
